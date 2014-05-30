@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entity name="database">
+	<entity name="character" reference="characters_data.xml" />
+	<entity name="pseudo" />
+</entity>
+
+<!-- Verlinkt auf die unterschiedlichen Datensätze -->

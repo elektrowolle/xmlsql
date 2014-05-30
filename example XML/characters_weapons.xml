@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content reference="characters_data.xml" >
+    <!-- Nahkampf- und Wurfwaffen -->
+    <weapon
+        name="Florett, geschärft"
+        attack="10"
+        attacks_per_round="1"
+        basic_change="20"
+        capacity="-"
+        damage="1W6 + Sb"
+        distance="Berührung" />
+
+    <weapon
+        name="Schwert"
+        attack="20"
+        attacks_per_round="1"
+        basic_change="10"
+        capacity="-"
+        damage="1W8 + 1 + Sb"
+        distance="Berührung" />
+
+    <weapon
+        name="Kleines Messer"
+        attack="9"
+        attacks_per_round="1"
+        basic_change="25"
+        capacity="-"
+        damage="1W4 + Sb"
+        distance="Berührung" />
+
+    <weapon
+        name="Kampfmesser"
+        attack="15"
+        attacks_per_round="1"
+        basic_change="25"
+        capacity="-"
+        damage="1W4 + 2 + Sb"
+        distance="Berührung" />
+
+    <weapon
+        name="Totschläger"
+        attack="4"
+        attacks_per_round="1"
+        basic_change="40"
+        capacity="-"
+        damage="1W4 + Sb"
+        distance="Berührung" />
+
+    <weapon
+        name="Großer Knüppel"
+        attack="20"
+        attacks_per_round="1"
+        basic_change="25"
+        capacity="-"
+        damage="1W8 + Sb"
+        distance="Berührung" />
+
+    <weapon
+        name="Stein, geworfen"
+        attack=""
+        attacks_per_round="1"
+        basic_change="Werfen"
+        capacity="-"
+        damage="1W4 + 1 / 2Sb"
+        distance="Werfen" />
+
+    <!-- Faustfeuerwaffen -->
+
+    <weapon
+        name=".22er Automatik"
+        attack="99"
+        attacks_per_round="3"
+        basic_change="20"
+        capacity="6"
+        damage="1W6"
+        distance="10m"
+        hitpoints="6" />
+
+    <weapon
+        name=".25er Derringer (1 Lauf)"
+        attack="00"
+        attacks_per_round="1"
+        basic_change="20"
+        capacity="1"
+        damage="1W6"
+        distance="3m"
+        hitpoints="5" />
+
+    <weapon
+        name=".32er Revolver (7.65mm)"
+        attack="00"
+        attacks_per_round="3"
+        basic_change="20"
+        capacity="6"
+        damage="1W8"
+        distance="15m"
+        hitpoints="10" />
+    <!-- Gewehre -->
+
+    <weapon
+        name=".22er Repetiergewehr"
+        attack="99"
+        attacks_per_round="1"
+        basic_change="25"
+        capacity="6"
+        damage="1W6+2"
+        distance="30m"
+        hitpoints="9" />
+
+    <weapon
+        name=".30er Unterhebelrepetiergewehr"
+        attack="98"
+        attacks_per_round="1"
+        basic_change="25"
+        capacity="6"
+        damage="2W6"
+        distance="50m"
+        hitpoints="8" />
+    <!-- Schrotgewehre -->
+
+    <weapon
+        name="Doppelﬂinte Kal. 10"
+        attack="00"
+        attacks_per_round="1 oder 2"
+        basic_change="30"
+        capacity="2"
+        damage="4W6 + 2 / 2W6 + 1 / 1W6"
+        distance="10 / 20 / 50m"
+        hitpoints="12" />
+
+    <weapon
+        name="Doppelﬂinte Kal. 12"
+        attack="00"
+        attacks_per_round="1 oder 2"
+        basic_change="30"
+        capacity="2"
+        damage="4W6 / 2W6 / 1W6"
+        distance="10 / 20 / 50m"
+        hitpoints="12" />
+    <!-- Maschinengewehr -->
+
+    <weapon
+        name="Browning M1917"
+        attack="98"
+        attacks_per_round="15"
+        basic_change="15"
+        capacity="250 Gurt"
+        damage="2W6 + 4"
+        distance="150m"
+        hitpoints="15" />
+
+</content>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content reference="characters_data.xml" >
+
+    <myth name="Necronomicon" stability_loss="" bonus="">
+        <text>
+			Das mit Abstand mächtigste magische Buch, zudem auch
+			das gefährlichste, ist das sagenumwobene Necronomicon.
+			Es ist das umfassendste und ausführlichste Werk über
+			den Mythos und damit in Verbindung stehenden Themen.
+			Neben Informationen über die Großen Alten und
+			deren Dienerkreaturen behandelt es die Grundzüge der
+			Geschichte unseres Planeten in vormenschlicher Zeit. Zudem
+			enthält es magische Symbole, Tafeln und Sternenkarten
+			sowie diverse Zauber und Beschwörungen. Von
+			diesem grauenhaften Werk gibt es mehrere verschiedene
+        </text>
+    </myth>
+
+    <myth name="Al-Azif (Arabisch)" stability_loss="1W10/2W10" bonus="18">
+        <text>
+            Verfasst von Abd al-Azrad etwa im Jahre 730 n.Chr. Es
+			ist nicht bekannt, wie das Buch in seiner ursprünglichen
+			Gestalt aussah, doch zirkulierten unter Gelehrten
+			des Mittelalters lange Zeit viele Abarten in Manuskriptform.
+			Bereits im 12. Jahrhundert galt diese Version als
+        </text>
+    </myth>
+
+    <myth name="Necronomicon (Griechisch)" stability_loss="1W10/2W10" bonus="17">
+        <text>
+			Übersetzt von Theodoras Philetas im Jahre 950 n. Chr. Von
+			frühen handschriftlichen Versionen ist nichts mehr bekannt.
+			Eine kleine Ausgabe in Italien (Florenz?) in Form
+			eines Folios wurde von der Kirche unterdrückt; sie verfügte
+			weder über Zeichnungen, Karten noch Tabellen. Das letzte
+			bekannte Exemplar wurde 1692 in Salem verbrannt.
+        </text>
+    </myth>
+
+    <myth name="Necronomicon (Latein)" stability_loss="1W10/2W10" bonus="16">
+        <text>
+			Im Jahre 1228 n.Chr. übersetzt von Olaus Wormius. Es
+			kam zunächst in Manuskriptform in Umlauf und wurde
+			dann im späten 15. Jahrhundert in Deutschland in einem
+			schwarz gehaltenen Folioformat gedruckt. In Spanien
+			wurde im frühen 17. Jahrhundert eine fast identische
+			Ausgabe herausgegeben. Man weiß von einem Exemplar
+			der ersten Aufl age und vier Exemplaren der zweiten Ausgabe,
+			die angeblich noch existieren sollen.
+        </text>
+    </myth>
+
+    <myth name="The King in Yellow (Englisch)" stability_loss="1W3/1W6+1" bonus="5">
+        <text>
+			Etwa im Jahre 1895 von einem Unbekannten übersetzt. Das
+			Original ist offensichtlich in Französisch geschrieben, doch
+			wurde diese Ausgabe kurz nach ihrer Veröffentlichung von
+			der Dritten Republik eingezogen und vernichtet. Bei der
+			englischen Ausgabe handelt es sich um ein dünnes Oktav-
+			Büchlein auf dessen Vorderseite ein großes Gelbes Zeichen
+			aufgeprägt ist. Alleine der Anblick des Gelben Zeichens kostet
+			einen Charakter einmalig 0/1W6 Stabilitätspunkte. Das
+			Buch enthält ein vielgestaltiges, traumähnliches Stück, das
+			dem Leser den Weg in den Wahnsinn weist.
+        </text>
+    </myth>
+
+    <myth name="R&apos;lyeh Text (Chinesisch)" stability_loss="1W8/2W8" bonus="15">
+        <text>
+			Dieses Werk stammt etwa aus dem Jahre 300 v.Chr. und
+			wurde von einem unbekannten Autor verfasst. Angeblich
+			wurden die originalen Tontafeln zerstört, doch gibt es
+			Gerüchte, denen zufolge es zumindest noch einige gute
+			Exemplare auf antiken Pergamenten gibt sowie neuere
+			Ausgaben von englischen und deutschen Übersetzungen.
+			Der Text beschäftigt sich offenbar mit Dagon, Hydra, dem
+			Sternengezücht, Zoth-Ommog, Ghatanothoa und Cthulhu
+			und berichtet zudem davon, wie Mu und R’lyeh im
+			Meer versanken.
+        </text>
+    </myth>
+
+</content>
+<!--
+<entity name="readen_myths" nested="true">
+	<entity name="myth" collection="true">
+		<data name="name"        type="string" />
+		<data name="description" type="string" />
+	</entity>
+</entity>
+-->

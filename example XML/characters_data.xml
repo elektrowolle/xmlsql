@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE entity SYSTEM "entity.dtd">
+<entity name="character">
+	<!-- Allgemeine Informationen -->
+    <data   name="avatar"      type="integer">0</data>
+    <data   name="player_name" type="string" />
+    <data   name="name"        type="string" />
+    <data	name="job"		   type="string" />
+    <data	name="title"       type="string" />
+    <data	name="birth_location"	   type="string" />
+    <data   name="sex"         type="string" />
+    <data   name="age"         type="integer" />
+    <data	name="insanities"  type="string" />
+    <data	name="era"			type="string" />
+    
+    <!-- Attribute und Rettungswuerfe -->
+    <data name="strength"      type="integer" />
+    <data name="constitution"  type="integer" />
+    <data name="height"  	   type="integer" />
+    <data name="dexterity"	   type="integer" />
+    <data name="appearance"    type="integer" />
+    <data name="mental_stability" type="integer" />
+    <data name="intelligence"  type="integer" />
+    <data name="mana"          type="integer" />
+    <data name="education"     type="integer" />
+    <data name="idea"          type="integer" />
+    <data name="luck"          type="integer" />
+    <data name="knowledge"     type="integer" />
+    <data name="max_stability" type="integer"  >99</data>
+    <data name="damage_bonus"  type="integer" />
+    <data name="sanity"        type="integer" />
+    <data name="magic"         type="integer" />
+    <data name="hit_points"    type="integer" />
+    
+    
+    <!-- Fertigkeiten -->
+    <entity name="abilities" nested="true">
+    	<data   name="modifier" type="integer" />
+    	<data   name="level"    type="string" />
+    	<entity name="ability">
+    		<data name="name"  type="string"  />
+    		<data name="value" type="integer" />
+    		<data name="time"  type="string"  /> 
+    	</entity>
+    </entity>
+    
+    <!-- |character_id|wepaon_id| -->
+    
+    
+    <!-- DARAUF ACHTEN, NEUES DATUM: Category "Schusswaffe" "Nahkampf" -->
+    <!-- Waffen, category = Schusswaffe or Nahkampf -->
+    <entity name="weapons" nested="true">
+	    <entity name="weapon">
+	    	<data name="name"              type="string"  />
+	    	<data name="category"		   type="string"  />
+	    	<data name="strength"          type="integer" />
+	    	<data name="basic_chance"      type="string"  />
+			<data name="damage"            type="string"  />
+			<data name="hands"			   type="integer" />
+			<data name="fail_function"	   type="integer" />
+			<data name="basic_distance"    type="string"  />
+			<data name="attacks_per_round" type="string"  />
+			<data name="capacity"          type="string"  />
+			<data name="hit_points"        type="string"  />
+	    </entity>
+    </entity>
+    
+    <!-- Persoenliche Daten -->
+	<data name="home_location"     type="string" />
+	<data name="description"       type="string" />
+	<data name="family_friends"    type="string" />
+	<data name="temporary_madness" type="string" />
+	<data name="injuries"		   type="string" />
+	<data name="scars"             type="string" />
+	<data name="history"           type="string" />
+	
+	<!-- Einkommen und Ersparnisse -->
+	<data name="income"   type="float"  />
+	<data name="cash"     type="float"  />
+	<data name="savings"  type="float"  />
+	<data name="possession"	type="string" />
+	<data name="property" type="string" />
+	
+	<!-- Ausruestung und Besitz -->
+	<entity name="assets" nested="true">
+		<entity name="equipment">
+			<data name="name"        type="string" />
+			<data name="description" type="string" />
+		</entity>
+	</entity>
+	
+	<!-- Gelesene Mythos-Werke -->
+	<entity name="readen_myths" nested="true">
+		<entity name="myth" collection="true">
+			<data   name="stability_loss" type="string"  />
+			<data   name="bonus"          type="integer" />
+			<data   name="name"           type="string"  />
+			<use ref="text"/>
+		</entity>
+	</entity>
+	
+	<!-- Magische Artefakte/bekannte Zauber -->
+	<entity name="artefacts" nested="true">
+		<entity name="artefact" collection="true">
+			<data name="name"        type="string" />
+			<data name="description" type="string" />
+		</entity>
+	</entity>
+	<entity name="spells" nested="true">
+		<entity name="spell" collection="true">
+			<data name="name"        type="string" />
+			<data name="description" type="string" />
+		</entity>
+	</entity>
+	<entity name="text">
+		<value name="content" />
+	</entity>
+	
+	<!-- Mythos-Wesen -->
+	<entity name="myth_creatures" nested="true">
+	    <entity name="myth_creature" collection="true">
+	        <data name="name"		 type="string" />
+	        <data name="description" type="string" />
+	    </entity>
+	</entity>
+</entity>
+
+<!-- <character name="Fridoline Muster" avatar="2">
+    <weapon  name="Small Sword" key="sSword3" strength="3" />
+    <abilities>
+    	<ability name="Schlafen" value="0.9" />
+    </abilities>
+</character>
+
+<character name="Husten Hugo"   avatar="4" weapon="3" />
+<character name="Karte Kadaver" avatar="4" weapon="sSword3" /> -->
+
+<!-- Wie funktioniert denn das?
+Eine <entity> ist eine Tabelle in der Datenbank. Sind <entity>s in einer entity, 
+ist das ein Verweis. <entity> kann dann entweder innerhalb der gleichen entity 
+erzeugt werden (gut, wenn dieser Typ nur in hier auftritt) oder mit dem Attribut 
+reference aus einer anderen Datei aufgerufen werden. Das attribut self, sagt 
+aus, dass die <entity> Rückbezogen auf die umschließende Entity funktioniert.
+Somit kann eine Mehrfachauswahl implementiert werden.
+
+<data> ist ein einzelnes Datum. <data> kann bisher nur die Datentypen int string 
+und float über das attribut type zugewiesen werden. Die Daten innerhalb von 
+<data></data> sind default-Werte.
+
+Um Datensätze einzutragen wird der <entity> Name benutzt. In diesem Beispiel
+<character>. Die Daten werden nun als Attribute eingefügt. Mehrfachauswahlen,
+wie in diesem Beispiel bei <ability> werden zwischen den Datansatz engefügt.
+
+<entity name="character">
+    <data   name="avatar" type="int">0</data>
+    <data   name="name"   type="string">Max Muster</data>
+    <entity name="weapon" reference="weapons_data.xml" />
+    <entity name="abilities" self="true">
+        <entity name="ability">
+            <data name="value" type="float"></data>
+        	<data name="base_value" type="float">0.1</data>
+        </entity>
+    </entity>
+</entity>
+
+<character name="Fridoline Muster" avatar="2">
+    <weapon name="Small Sword" strength="3" />
+    <abilities>
+    	<ability name="Schlafen" value="0.9" />
+    </abilities>
+</character>
+
+<character name="Husten Hugo" avatar="4" weapon="3" />
+ -->

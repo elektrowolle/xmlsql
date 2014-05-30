@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<content reference="characters_data.xml">
+	<ability name="Ansehen">15</ability>
+	<ability name="Anthropologie">01</ability>
+	<ability name="Archaeologie">01</ability>
+	<ability name="Astronomie">01</ability>
+	<ability name="Ausweichen">GE x 02</ability>
+	<ability name="Bibliotheksnutzung" time="1890/1920/Now">25</ability>
+	<ability name="Internetnutzung" time="now">25</ability>
+	<ability name="Biologie">01</ability>
+	<ability name="Buchfuehrung">10</ability>
+	<ability name="Chemie">01</ability>
+	<ability name="Computernutzung" time="now">01</ability>
+	<ability name="Cthulhu_Mythos">00</ability>
+	<ability name="Elektrische_Reparaturen">10</ability>
+	<ability name="Elektronik" time="now">01</ability>
+	<ability name="Erste_Hilfe">30</ability>
+	<ability name="Fallschirmspringen" time="now">01</ability>
+	<ability name="Fahren">20</ability>
+	<ability name="F_Slot1">20</ability>
+	<ability name="F_Slot2">20</ability>
+	<ability name="Feilschen">05</ability>
+	<ability name="Fotografie">10</ability>
+	<ability name="Fremdsprache">01</ability>
+	<ability name="Fr_Slot1">01</ability>
+	<ability name="Fr_Slot2">01</ability>
+	<ability name="Fr_Slot3">01</ability>
+	<ability name="Fr_Slot4">01</ability>
+	<ability name="Geologie">01</ability>
+	<ability name="Geschichtskenntnisse">20</ability>
+	<ability name="Gesetzeskenntnisse">05</ability>
+	<ability name="Handwerk">05</ability>
+	<ability name="H_Slot1">05</ability>
+	<ability name="H_Slot2">05</ability>
+	<ability name="H_Slot3">05</ability>
+	<ability name="Horchen">25</ability>
+	<ability name="Kampfsportart">01</ability>
+	<ability name="Klettern">ST+GE </ability>
+	<ability name="Kunst">05</ability>
+	<ability name="K_Slot1">05</ability>
+	<ability name="K_Slot2">05</ability>
+	<ability name="Mechanische_Reparaturen">20</ability>
+	<ability name="Medizin">05</ability>
+	<ability name="Muttersprache">BI x 05</ability>
+	<ability name="M_Slot">BI x 05</ability>
+	<ability name="Naturkunde">10</ability>
+	<ability name="Navigation" time="now">01</ability>
+	<ability name="Okkultismus">05</ability>
+	<ability name="Orientierung">10</ability>
+	<ability name="Pharmazie">01</ability>
+	<ability name="Physik">01</ability>
+	<ability name="Pilot">01</ability>
+	<ability name="P_Slot1">01</ability>
+	<ability name="P_Slot2">01</ability>
+	<ability name="Psychoanalyse" time="1920/Now">01</ability>
+	<ability name="Psychologie">05</ability>
+	<ability name="Reiten">05</ability>
+	<ability name="Schleichen">10</ability>
+	<ability name="Schlosserarbeiten">01</ability>
+	<ability name="Schweres_Geraet">01</ability>
+	<ability name="S_Slot1">01</ability>
+	<ability name="S_Slot2">01</ability>
+	<ability name="Schwimmen">25</ability>
+	<ability name="Sprengen" time="now">01</ability>
+	<ability name="Springen">25</ability>
+	<ability name="Spurensuche">10</ability>
+	<ability name="Tarnen">15</ability>
+	<ability name="Ueberreden">05</ability>
+	<ability name="Ueberzeugen">15</ability>
+	<ability name="Verbergen">10</ability>
+	<ability name="Verborgenes_erkennen">25</ability>
+	<ability name="Verkleiden">01</ability>
+	<ability name="Werfen">25</ability>
+	<ability name="Z_Slot1"></ability>
+	<ability name="Z_Slot2"></ability>
+	<ability name="Z_Slot3"></ability>
+
+	<!-- Schusswaffen -->
+	<ability name="Artillerie" time="now">01</ability>
+	<ability name="Bogen" time="now">20</ability>
+	<ability name="Faustfeuerwaffe">20</ability>
+	<ability name="Gewehr">25</ability>
+	<ability name="Granatgewehr" time="now">15</ability>
+	<ability name="Maschinengewehr">15</ability>
+	<ability name="Maschinenpistole" time="1920/now">15</ability>
+	<ability name="Schrotflinte">30</ability>
+	<ability name="Schwere_Waffen" time="now">10</ability>
+	<ability name="ZW_Slot1"></ability>
+	<ability name="ZW_Slot2"></ability>
+
+	
+	
+</content>
